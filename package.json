@@ -1,0 +1,27 @@
+{
+  "name": "@iso/automation",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Automation Testing",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "Stefan Teneff <st.teneff@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.5",
+    "jest": "^24.8.0",
+    "jest-puppeteer": "^4.2.0",
+    "puppeteer": "^1.18.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/test/**/*.js"
+    ],
+    "preset": "jest-puppeteer"
+  }
+}
