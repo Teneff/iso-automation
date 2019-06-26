@@ -1,7 +1,7 @@
 describe("Home Page", () => {
   beforeAll(async () => {
     return page.goto("http://develop.headless.dev.ecm", {
-      waitUntil: 'networkidle0'
+      waitUntil: "networkidle0"
     });
   });
 
@@ -9,8 +9,8 @@ describe("Home Page", () => {
     expect(await page.title()).toContain("Isobar");
   });
 
-  it('should contain at least 5 links', async () => {
-    const links = await page.$$('main a');
+  it("should contain at least 5 links", async () => {
+    const links = await page.$$("main a");
     expect(links.length).toBeGreaterThanOrEqual(5);
-  })
+  });
 });

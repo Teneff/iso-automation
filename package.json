@@ -5,6 +5,8 @@
   "description": "Automation Testing",
   "main": "src/index.js",
   "scripts": {
+    "lint": "prettier **/test/**",
+    "lint:fix": "npm run lint -- --write",
     "test": "jest"
   },
   "keywords": [
@@ -16,6 +18,7 @@
     "@babel/preset-env": "^7.4.5",
     "jest": "^24.8.0",
     "jest-puppeteer": "^4.2.0",
+    "prettier": "^1.18.2",
     "puppeteer": "^1.18.0"
   },
   "jest": {
